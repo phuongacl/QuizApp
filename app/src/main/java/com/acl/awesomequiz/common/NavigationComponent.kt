@@ -1,6 +1,5 @@
 package com.acl.awesomequiz.common
 
-import android.view.Menu
 import androidx.compose.runtime.Composable
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
@@ -29,6 +28,9 @@ fun AppNavigationComponent() {
         }
         composable("about") {
             AboutScreen(navController)
+        }
+        composable("quote") {
+            QuoteScreen(navController)
         }
     }
 }
