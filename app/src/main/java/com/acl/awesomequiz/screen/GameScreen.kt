@@ -36,10 +36,6 @@ fun GameScreen(navController: NavHostController) {
     val score = remember {
         mutableStateOf(0)
     }
-    val level = remember {
-        mutableStateOf(1)
-    }
-
     val interactionSource = remember {
         MutableInteractionSource()
     }
@@ -110,14 +106,6 @@ fun GameScreen(navController: NavHostController) {
         Text(
             text = "Your score is ${score.value}",
             fontSize = 32.sp,
-            fontWeight = FontWeight.Bold,
-            color = primaryColor
-        )
-
-        // Level
-        Text(
-            text = "Level ${level.value}",
-            fontSize = 18.sp,
             fontWeight = FontWeight.Bold,
             color = primaryColor
         )
