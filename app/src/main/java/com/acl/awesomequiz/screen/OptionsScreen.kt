@@ -53,7 +53,7 @@ fun OptionsScreen(navController: NavController) {
                         checked = isDarkModeEnabled,
                         onCheckedChange = { isDarkModeEnabled = it },
                         colors = SwitchDefaults.colors(
-                            checkedThumbColor = MaterialTheme.colors.secondary,
+                            checkedThumbColor = primaryColor,
                             uncheckedThumbColor = MaterialTheme.colors.onSurface.copy(alpha = ContentAlpha.disabled)
                         )
                     )
@@ -73,7 +73,7 @@ fun OptionsScreen(navController: NavController) {
                         checked = isSoundsEnabled,
                         onCheckedChange = { isSoundsEnabled = it },
                         colors = SwitchDefaults.colors(
-                            checkedThumbColor = MaterialTheme.colors.secondary,
+                            checkedThumbColor = primaryColor,
                             uncheckedThumbColor = MaterialTheme.colors.onSurface.copy(alpha = ContentAlpha.disabled)
                         )
                     )
